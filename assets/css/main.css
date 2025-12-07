@@ -4086,3 +4086,28 @@ li {
   list-style: none;
   padding-left: 0;
 }
+
+.main-logo {
+  height: 200px;
+  vertical-align: middle;
+  margin-right: 50px;
+}
+
+/* 手機版：縮小 logo、置中、不要右邊空那麼多 */
+@media screen and (max-width: 768px) {
+
+  .logo-above-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;   /* 和下面文字留點距離 */
+  }
+
+  .main-logo {
+    height: 90px !important;   /* 你現在這尺寸很適合 */
+    margin: 0 !important;
+    display: block;
+  }
+
+}
+
